@@ -16,7 +16,7 @@ function HowItWorks() {
                     </p>
                 </div>
                 <div className="col-md-4">
-                    <h4 className="text-primary">3. Reuse in One Click</h4>
+                    <h4 className="text-primary">3. Use and Reuse</h4>
                     <p className="text-muted">
                         Open PromptNest, find your saved prompt, and copy to your clip board and paste into ChatGPT without typing a word.
                     </p>
