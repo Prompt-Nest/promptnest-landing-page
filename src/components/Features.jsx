@@ -13,8 +13,8 @@ function Features() {
                     <p>Organize prompts with tags and categories that make sense to you.</p>
                 </div>
                 <div className="col-md-4">
-                    <h3 className="text-secondary"><FaSyncAlt className="mb-2" /> Reuse in Seconds</h3>
-                    <p>Insert your prompts instantly into ChatGPT with one click from the extension.</p>
+                    <h3 className="text-secondary"><FaSyncAlt className="mb-2" /> Use and Reuse</h3>
+                    <p>Copy & paste your prompts instantly into ChatGPT from the extension.</p>
                 </div>
             </section>
             <p><i>Screenshots to come. Possibly make a slide show</i></p>
