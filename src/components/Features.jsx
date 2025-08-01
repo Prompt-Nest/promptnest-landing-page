@@ -1,6 +1,30 @@
-import {FaBoxOpen,FaTags,FaSyncAlt} from 'react-icons/fa';
+
+import {useState} from 'react';
+import {FaBoxOpen,FaTags,FaSyncAlt,FaChevronLeft,FaChevronRight} from 'react-icons/fa';
 
 function Features() {
+    const slides=[
+        {
+            img: '2.jpg',
+            title: 'Save Prompts',
+            desc: 'Capture your most used prompts with one click. Never lose a great idea again.',
+        },
+        {
+            img: '3.jpg',
+            title: 'Tag & Categorize',
+            desc: 'Organize prompts with tags and categories that make sense to you.',
+        },
+        {
+            img: '1.jpg',
+            title: 'Reuse in Seconds',
+            desc: 'Copy & paste your prompts instantly into ChatGPT from the extension.',
+        },
+    ];
+
+    const [current,setCurrent]=useState(0);
+    const prevSlide=() => setCurrent((current-1+slides.length)%slides.length);
+    const nextSlide=() => setCurrent((current+1)%slides.length);
+
     return (
         <>
             <section className="row text-center mb-5">
@@ -17,9 +41,47 @@ function Features() {
                     <p>Copy & paste your prompts instantly into ChatGPT from the extension.</p>
                 </div>
             </section>
-            <p><i>Screenshots to come. Possibly make a slide show</i></p>
-        </>
 
+            {/* Carousel section */}
+            <section className="text-center mb-5">
+                <div style={{margin: '0 auto',position: 'relative'}}>
+                    <div style={{position: 'relative',minHeight: 600,background: '#f8f9fa',borderRadius: 12,boxShadow: '0 2px 8px #0001',padding: 24}}>
+                        <button
+                            aria-label="Previous"
+                            onClick={prevSlide}
+                            style={{position: 'absolute',left: 8,top: '50%',transform: 'translateY(-50%)',background: 'none',border: 'none',fontSize: 28,color: '#007bff',cursor: 'pointer',zIndex: 2}}
+                        >
+                            <FaChevronLeft />
+                        </button>
+                        <div>
+                            <img src={slides[current].img} alt={slides[current].title} className="img-fluid mb-3" style={{maxHeight: 600}} />
+                        </div>
+                        <button
+                            aria-label="Next"
+                            onClick={nextSlide}
+                            style={{position: 'absolute',right: 8,top: '50%',transform: 'translateY(-50%)',background: 'none',border: 'none',fontSize: 28,color: '#007bff',cursor: 'pointer',zIndex: 2}}
+                        >
+                            <FaChevronRight />
+                        </button>
+                        <div style={{position: 'absolute',bottom: 10,left: 0,right: 0,textAlign: 'center'}}>
+                            {slides.map((_,idx) => (
+                                <span
+                                    key={idx}
+                                    style={{
+                                        display: 'inline-block',
+                                        width: 10,
+                                        height: 10,
+                                        borderRadius: '50%',
+                                        background: idx===current? '#007bff':'#ccc',
+                                        margin: '0 4px',
+                                    }}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }
 

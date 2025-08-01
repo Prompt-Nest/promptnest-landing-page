@@ -3,7 +3,7 @@ function CallToAction() {
         <>
             <section className="text-center mb-5">
                 <a
-                    href="https://chrome.google.com/webstore/"
+                    href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en"
                     target="_blank"
                     className="btn btn-primary btn-lg mt-4"
                 >
