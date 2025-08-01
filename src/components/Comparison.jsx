@@ -21,7 +21,7 @@ function ComparisonTable() {
                         <tr>
                             <td>Price</td>
                             <td>Free</td>
-                            <td>$4.99/month OR $29.99/year</td>
+                            <td>$2.99/month</td>
                         </tr>
                         <tr>
                             <td>Prompt Storage</td>
