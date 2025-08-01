@@ -29,8 +29,13 @@ function ComparisonTable() {
                             <td><FaInfinity className="text-primary" /> Unlimited</td>
                         </tr>
                         <tr>
-                            <td>Tag & Categorize Prompts</td>
+                            <td>Tags & Folders</td>
                             <td><FaCheck className="text-success" /></td>
+                            <td><FaCheck className="text-success" /></td>
+                        </tr>
+                        <tr>
+                            <th>Bulk Import / Export</th>
+                            <td><FaTimes className="text-danger" /></td>
                             <td><FaCheck className="text-success" /></td>
                         </tr>
                         <tr>
