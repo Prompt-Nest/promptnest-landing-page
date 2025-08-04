@@ -5,19 +5,19 @@ import {FaBoxOpen,FaTags,FaSyncAlt,FaChevronLeft,FaChevronRight} from 'react-ico
 function Features() {
     const slides=[
         {
-            img: '2.jpg',
+            img: '1.png',
             title: 'Save Prompts',
-            desc: 'Capture your most used prompts with one click. Never lose a great idea again.',
+            desc: 'Quickly edit or add new prompts—your ideas, your way',
         },
         {
-            img: '3.jpg',
+            img: '2.png',
             title: 'Tag & Categorize',
-            desc: 'Organize prompts with tags and categories that make sense to you.',
+            desc: 'Organize and filter your prompt collection in seconds',
         },
         {
-            img: '1.jpg',
-            title: 'Reuse in Seconds',
-            desc: 'Copy & paste your prompts instantly into ChatGPT from the extension.',
+            img: '3.png',
+            title: 'Access Anytime',
+            desc: 'Always accessible from the side—never lose your workflow',
         },
     ];
 
@@ -54,6 +54,7 @@ function Features() {
                             <FaChevronLeft />
                         </button>
                         <div>
+                            <p className="text-muted">{slides[current].desc}</p>
                             <img src={slides[current].img} alt={slides[current].title} className="img-fluid mb-3" style={{maxHeight: 600}} />
                         </div>
                         <button

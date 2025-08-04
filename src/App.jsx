@@ -13,6 +13,7 @@ import CallToAction from './components/CallToAction';
 import Faq from './components/Faq';
 import Advantages from './components/Advantages';
 import Comparison from './components/Comparison';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   const slides=[
@@ -40,7 +41,6 @@ function App() {
   return (
     <div className="container py-5">
       <Hero />
-
       <Features />
       <HowItWorks />
       <UseCases />
@@ -48,6 +48,8 @@ function App() {
       <Comparison />
       <Faq />
       <CallToAction />
+      <h2 id="privacy">Privacy Policy</h2>
+      <PrivacyPolicy />
       <Footer />
     </div>
   );
