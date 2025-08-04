@@ -1,7 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 import {useState} from 'react';
-import {FaBoxOpen,FaTags,FaSyncAlt,FaChevronLeft,FaChevronRight,FaYoutube,FaBullhorn,FaGraduationCap,FaCode,FaBolt,FaLaptopCode,FaLock,FaCheck,FaTimes,FaInfinity,FaQuestionCircle} from 'react-icons/fa';
+import {
+  FaBoxOpen,FaTags,FaSyncAlt,FaChevronLeft,FaChevronRight,FaYoutube,
+  FaBullhorn,FaGraduationCap,FaCode,FaBolt,FaLaptopCode,FaLock,
+  FaCheck,FaTimes,FaInfinity,FaQuestionCircle
+} from 'react-icons/fa';
 
 // Components
 import Footer from './components/Footer';
@@ -15,29 +20,11 @@ import Advantages from './components/Advantages';
 import Comparison from './components/Comparison';
 import PrivacyPolicy from './components/PrivacyPolicy';
 
-function App() {
-  const slides=[
-    {
-      img: '2.jpg',
-      title: 'Save Prompts',
-      desc: 'Capture your most used prompts with one click. Never lose a great idea again.',
-    },
-    {
-      img: '3.jpg',
-      title: 'Tag & Categorize',
-      desc: 'Organize prompts with tags and categories that make sense to you.',
-    },
-    {
-      img: '1.jpg',
-      title: 'Reuse in Seconds',
-      desc: 'Copy & paste your prompts instantly into ChatGPT from the extension.',
-    },
-  ];
+// Pages
+import Blog from './pages/Blog';
+import Post from './pages/Post';
 
-  const [current,setCurrent]=useState(0);
-  const prevSlide=() => setCurrent((current-1+slides.length)%slides.length);
-  const nextSlide=() => setCurrent((current+1)%slides.length);
-
+function Home() {
   return (
     <div className="container py-5">
       <Hero />
@@ -50,8 +37,38 @@ function App() {
       <CallToAction />
       <h2 id="privacy">Privacy Policy</h2>
       <PrivacyPolicy />
-      <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light px-4">
+        <Link className="navbar-brand" to="/">PromptNest</Link>
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav me-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/promptnest-landing-page/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/promptnest-landing-page/blog">Blog</Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/promptnest-landing-page/#privacy">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <Routes>
+        <Route path="/promptnest-landing-page/" element={<Home />} />
+        <Route path="promptnest-landing-page/blog" element={<Blog />} />
+        <Route path="/promptnest-landing-page/blog/:slug" element={<Post />} />
+      </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 
