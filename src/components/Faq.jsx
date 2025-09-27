@@ -85,7 +85,7 @@ function Faq() {
                         data-bs-parent="#faqAccordion"
                     >
                         <div className="accordion-body">
-                            Yes! PromptNest is free to use with optional premium features coming soon.
+                            Yes — PromptNest offers a free tier that stores up to 10 prompts. Premium unlocks unlimited storage, CSV bulk import/export, and folder support. You can download ready-made CSV templates (for example, YouTube creator templates) from the landing page to get started.
                         </div>
                     </div>
                 </div>

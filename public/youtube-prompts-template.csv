@@ -1,0 +1,5 @@
+title,prompt,tags
+"Hook + Teaser","Write a 15-20 second hook for a YouTube video about {topic} that teases a surprising result and invites viewers to watch until the end.","hook,shorts,engagement"
+"SEO Title + Keywords","Generate an SEO-optimized YouTube title for a video about {topic}. Include main keyword and keep under 60 characters.","title,seo"
+"Video Description","Write a 3-paragraph YouTube video description for a video about {topic} with timestamps, CTAs, and relevant hashtags.","description,seo,cta"
+"Thumbnail Text Options","Suggest 5 short thumbnail text options (2-4 words) that maximize curiosity for a video on {topic}.","thumbnail,copy"

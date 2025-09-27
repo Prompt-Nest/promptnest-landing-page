@@ -14,6 +14,7 @@ import Faq from './components/Faq';
 import Advantages from './components/Advantages';
 import Comparison from './components/Comparison';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import YouTubePrompts from './components/YouTubePrompts';
 
 function App() {
   const slides=[
@@ -41,13 +42,13 @@ function App() {
   return (
     <div className="container py-5">
       <Hero />
+      <YouTubePrompts />
       <Features />
       <HowItWorks />
       <UseCases />
       <Advantages />
       <Comparison />
       <Faq />
-      <CallToAction />
       <h2 id="privacy">Privacy Policy</h2>
       <PrivacyPolicy />
       <Footer />

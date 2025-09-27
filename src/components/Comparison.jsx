@@ -5,7 +5,7 @@ function ComparisonTable() {
         <section className="container mb-5">
             <div className="text-center mb-4">
                 <h2>Compare Plans</h2>
-                <p className="text-muted">Choose the plan that fits your workflow best. Upgrade anytime.</p>
+                <p className="text-muted">Creators — start free and upgrade when you need unlimited prompts or CSV import/export for bulk uploads.</p>
             </div>
 
             <div className="table-responsive">
