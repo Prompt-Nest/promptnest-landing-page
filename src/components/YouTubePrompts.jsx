@@ -59,8 +59,8 @@ function YouTubePrompts() {
     return (
         <section className="container mb-5">
             <div className="text-center mb-4">
-                <h2>YouTube Creator Prompts</h2>
-                <p className="text-muted">Ready-made prompts and a CSV template to jumpstart your channel workflow.</p>
+                <h2>Example: YouTube Creator Prompts</h2>
+                <p className="text-muted">Here's one sample template set you can import into PromptNest. Build your own collections for any workflow.</p>
             </div>
 
             <div className="row gy-3">

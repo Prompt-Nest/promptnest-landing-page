@@ -1,4 +1,4 @@
-import {FaBolt,FaTags,FaLaptopCode,FaLock} from 'react-icons/fa';
+import {FaColumns,FaTags,FaLaptopCode,FaLock} from 'react-icons/fa';
 
 function Advantages() {
     return (
@@ -11,12 +11,12 @@ function Advantages() {
             </div>
 
             <div className="row gy-4">
-                {/* Fast Access */}
+                {/* Sidebar Access */}
                 <div className="col-md-6 col-lg-3 text-center">
-                    <FaBolt size={36} className="text-primary mb-2" />
-                    <h5 className="text-primary">Lightning Fast</h5>
+                    <FaColumns size={36} className="text-primary mb-2" />
+                    <h5 className="text-primary">Sidebar Access</h5>
                     <p className="text-muted">
-                        Save and reuse prompts instantly without switching tabs or hunting through docs.
+                        Open PromptNest as a sidebar panel on ChatGPT, Gemini, and Claude. Browse and insert prompts without leaving your chat.
                     </p>
                 </div>
 

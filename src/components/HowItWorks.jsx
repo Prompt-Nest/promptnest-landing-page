@@ -6,7 +6,7 @@ function HowItWorks() {
                 <div className="col-md-4">
                     <h4 className="text-primary">1. Save Prompts Instantly</h4>
                     <p className="text-muted">
-                        Just highlight and save any prompt you're using in ChatGPT with one click. PromptNest stores it directly in your extension.
+                        Open the PromptNest sidebar or popup, type or paste your prompt, add a title and tags, and save. Your prompts are stored locally in the extension.
                     </p>
                 </div>
                 <div className="col-md-4">
@@ -18,7 +18,7 @@ function HowItWorks() {
                 <div className="col-md-4">
                     <h4 className="text-primary">3. Use and Reuse</h4>
                     <p className="text-muted">
-                        Open PromptNest, find your saved prompt, and copy to your clip board and paste into ChatGPT without typing a word.
+                        Open the sidebar on ChatGPT, Gemini, or Claude, find your saved prompt, and insert it into the active chat with one click — no copy-paste needed.
                     </p>
                 </div>
             </div>

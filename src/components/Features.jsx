@@ -7,7 +7,7 @@ function Features() {
         {
             img: '1.png',
             title: 'Save Prompts',
-            desc: 'Quickly edit or add new prompts—your ideas, your way',
+            desc: 'Save any prompt with a title, body, and tags — your ideas, your way',
         },
         {
             img: '2.png',
@@ -17,7 +17,7 @@ function Features() {
         {
             img: '3.png',
             title: 'Access Anytime',
-            desc: 'Always accessible from the side—never lose your workflow',
+            desc: 'Open the sidebar on ChatGPT, Gemini, or Claude and insert prompts with one click',
         },
     ];
 
@@ -30,7 +30,7 @@ function Features() {
             <section className="row text-center mb-5">
                 <div className="col-md-4">
                     <h3 className="text-secondary"><FaBoxOpen className="mb-2" /> Save Prompts</h3>
-                    <p>Capture your most used prompts with one click. Never lose a great idea again.</p>
+                    <p>Save any prompt with a title, body, and tags. Never lose a great idea again.</p>
                 </div>
                 <div className="col-md-4">
                     <h3 className="text-secondary"><FaTags className="mb-2" /> Tag & Categorize</h3>
@@ -38,7 +38,7 @@ function Features() {
                 </div>
                 <div className="col-md-4">
                     <h3 className="text-secondary"><FaSyncAlt className="mb-2" /> Reuse in Seconds</h3>
-                    <p>Copy & paste your prompts instantly into ChatGPT from the extension.</p>
+                    <p>Open the sidebar on ChatGPT, Gemini, or Claude and insert your prompts with one click.</p>
                 </div>
             </section>
 
