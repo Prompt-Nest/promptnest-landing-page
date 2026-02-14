@@ -12,12 +12,14 @@ import Advantages from './components/Advantages';
 import Comparison from './components/Comparison';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import YouTubePrompts from './components/YouTubePrompts';
+import OneClickInsert from './components/OneClickInsert';
 
 function App() {
   return (
     <div className="container py-5">
       <Hero />
       <Features />
+      <OneClickInsert />
       <HowItWorks />
       <UseCases />
       <Advantages />

@@ -1,38 +1,35 @@
-import React from 'react';
+import { FaDownload, FaArrowRight } from 'react-icons/fa';
 
 function downloadCSV() {
-    // generate CSV from examplePrompts in-memory so we don't rely on a hosted file
-    const rows=[
-        ['title','prompt','tags'],
-        ...examplePrompts.map(p => [p.title,p.prompt,p.tags])
+    const rows = [
+        ['title', 'prompt', 'tags'],
+        ...examplePrompts.map(p => [p.title, p.prompt, p.tags])
     ];
 
-    const escapeCell=(cell) => {
-        if(cell==null) return '';
-        const asString=String(cell);
-        // escape double quotes by doubling them
-        if(asString.includes('"')||asString.includes(',')||asString.includes('\n')) {
-            return `"${asString.replace(/"/g,'""')}"`;
+    const escapeCell = (cell) => {
+        if (cell == null) return '';
+        const asString = String(cell);
+        if (asString.includes('"') || asString.includes(',') || asString.includes('\n')) {
+            return `"${asString.replace(/"/g, '""')}"`;
         }
         return asString;
     };
 
-    const csvContent=rows.map(r => r.map(escapeCell).join(',')).join('\n');
+    const csvContent = rows.map(r => r.map(escapeCell).join(',')).join('\n');
 
-    // prepend BOM so Excel on Windows recognizes UTF-8
-    const bom='\uFEFF';
-    const blob=new Blob([bom+csvContent],{type: 'text/csv;charset=utf-8;'});
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');
-    a.href=url;
-    a.download='youtube-prompts-template.csv';
+    const bom = '\uFEFF';
+    const blob = new Blob([bom + csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'youtube-prompts-template.csv';
     document.body.appendChild(a);
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
 }
 
-const examplePrompts=[
+const examplePrompts = [
     {
         title: 'Hook + Teaser',
         prompt: "Write a 15-20 second hook for a YouTube video about {topic} that teases a surprising result and invites viewers to watch until the end.",
@@ -59,18 +56,30 @@ function YouTubePrompts() {
     return (
         <section className="container mb-5">
             <div className="text-center mb-4">
-                <h2>Example: YouTube Creator Prompts</h2>
-                <p className="text-muted">Here's one sample template set you can import into PromptNest. Build your own collections for any workflow.</p>
+                <h2 className="fw-bold">Example: YouTube Creator Prompts</h2>
+                <p className="text-muted">
+                    Here's one sample template set you can import into PromptNest. Build your own collections for any workflow.
+                </p>
             </div>
 
             <div className="row gy-3">
-                {examplePrompts.map((p,idx) => (
+                {examplePrompts.map((p, idx) => (
                     <div className="col-md-6" key={idx}>
-                        <div className="card h-100">
+                        <div className="card h-100 border-0 shadow-sm">
                             <div className="card-body">
-                                <h5 className="card-title">{p.title}</h5>
-                                <p className="card-text text-monospace" style={{whiteSpace: 'pre-wrap'}}>{p.prompt}</p>
-                                <p className="text-muted"><small>Tags: {p.tags}</small></p>
+                                <h5 className="fw-semibold">{p.title}</h5>
+                                <p className="text-muted" style={{ whiteSpace: 'pre-wrap' }}>{p.prompt}</p>
+                                <p className="mb-0">
+                                    {p.tags.split(',').map((tag, i) => (
+                                        <span
+                                            key={i}
+                                            className="badge me-1"
+                                            style={{ background: 'rgba(124, 58, 237, 0.1)', color: '#7c3aed' }}
+                                        >
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -78,8 +87,22 @@ function YouTubePrompts() {
             </div>
 
             <div className="text-center mt-4">
-                <button className="btn btn-outline-primary me-2" onClick={downloadCSV}>Download CSV Template</button>
-                <a href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en" target="_blank" rel="noreferrer" className="btn btn-primary">Add to Chrome</a>
+                <button
+                    className="btn btn-lg text-white fw-semibold me-2"
+                    onClick={downloadCSV}
+                    style={{ background: 'linear-gradient(135deg, #7c3aed, #6366f1)', border: 'none' }}
+                >
+                    <FaDownload className="me-2" /> Download CSV Template
+                </button>
+                <a
+                    href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-lg text-white fw-semibold"
+                    style={{ background: 'linear-gradient(135deg, #7c3aed, #6366f1)', border: 'none' }}
+                >
+                    Add to Chrome <FaArrowRight className="ms-2" />
+                </a>
             </div>
         </section>
     );

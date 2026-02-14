@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Design tokens from Chrome extension */
+  --pn-violet: #7c3aed;
+  --pn-violet-light: #8b5cf6;
+  --pn-violet-dark: #6d28d9;
+  --pn-bg: #f5f3ff;
+  --pn-card-bg: rgba(255, 255, 255, 0.7);
+  --pn-card-border: rgba(124, 58, 237, 0.15);
+  --pn-card-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
+  --pn-radius: 12px;
+
+  /* Bootstrap overrides */
+  --bs-primary: #7c3aed;
+  --bs-primary-rgb: 124, 58, 237;
+
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #213547;
+  background-color: var(--pn-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,12 +30,12 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--pn-violet);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: var(--pn-violet-dark);
 }
 
 body {
@@ -30,8 +45,8 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #f8f9fa;
-  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--pn-bg);
+  font-family: 'Inter', sans-serif;
 }
 
 h1,
@@ -39,6 +54,76 @@ h3 {
   font-weight: 600;
 }
 
+/* Bootstrap .text-primary override */
+.text-primary {
+  color: var(--pn-violet) !important;
+}
+
+/* Bootstrap .btn-primary override */
+.btn-primary {
+  background: linear-gradient(135deg, var(--pn-violet), var(--pn-violet-light));
+  border-color: var(--pn-violet);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--pn-violet-dark), var(--pn-violet));
+  border-color: var(--pn-violet-dark);
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+/* Bootstrap .btn-outline-primary override */
+.btn-outline-primary {
+  color: var(--pn-violet);
+  border-color: var(--pn-violet);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--pn-violet);
+  border-color: var(--pn-violet);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.3);
+}
+
+.btn-outline-primary:active {
+  transform: scale(0.97);
+}
+
+/* Card glassmorphic styling */
+.card {
+  background: var(--pn-card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--pn-card-border);
+  border-left: 3px solid var(--pn-violet);
+  border-radius: var(--pn-radius);
+  box-shadow: var(--pn-card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.12);
+}
+
+/* Accordion styling */
+.accordion-button:not(.collapsed) {
+  background-color: rgba(124, 58, 237, 0.08);
+  color: var(--pn-violet-dark);
+  box-shadow: inset 0 -1px 0 var(--pn-card-border);
+}
+
+.accordion-button:focus {
+  border-color: var(--pn-violet-light);
+  box-shadow: 0 0 0 0.25rem rgba(124, 58, 237, 0.25);
+}
+
+/* General button reset for non-Bootstrap buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -46,31 +131,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
 }
