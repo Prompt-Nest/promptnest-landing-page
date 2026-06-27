@@ -12,11 +12,19 @@ const faqs = [
     },
     {
         question: 'Is PromptNest free to use?',
-        answer: 'Yes — PromptNest offers a free tier that stores up to 10 prompts with tags and basic folders. Pro ($2.99/month) unlocks unlimited storage, full nested folders, and CSV bulk import/export. You can download ready-made CSV templates (for example, YouTube creator templates) from the landing page to get started.',
+        answer: 'Yes — PromptNest offers a free tier that stores up to 10 prompts with tags, folders, and fill-in template variables. Pro ($2.99/month) unlocks unlimited storage and CSV bulk import/export so you can back up and move your library between browsers.',
     },
     {
         question: 'Which AI platforms does PromptNest support?',
         answer: 'PromptNest works as a sidebar panel on ChatGPT, Gemini, and Claude. You can also use the popup on any webpage to save and copy prompts.',
+    },
+    {
+        question: 'What are template variables?',
+        answer: 'Wrap any part of a prompt in curly braces, like {topic} or {audience}, to turn it into a reusable template. When you insert a prompt that contains variables, PromptNest pops up a quick form to fill in each value before the finished text drops into your AI chat. Write a prompt once, reuse it for everything.',
+    },
+    {
+        question: 'Can I save text I find around the web?',
+        answer: 'Yes. Highlight any text on a page, right-click, and choose "Save to PromptNest" to capture it as a new prompt without opening the popup.',
     },
     {
         question: 'Do my prompts sync across devices?',
@@ -28,7 +36,7 @@ const faqs = [
     },
     {
         question: 'How do I cancel my Pro subscription?',
-        answer: 'You can cancel your Pro subscription at any time from the extension\'s settings page. Your subscription will remain active until the end of the current billing period, after which your account will revert to the free tier.',
+        answer: 'You can cancel your Pro subscription at any time. Open PromptNest and choose to manage your subscription — this opens the secure Stripe billing portal where you can cancel. Your subscription stays active until the end of the current billing period, after which your account reverts to the free tier.',
     },
 ];
 

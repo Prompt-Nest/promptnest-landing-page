@@ -13,10 +13,10 @@ function Hero() {
             >
                 <div style={{ position: 'relative', zIndex: 1 }}>
                     <h1 className="display-4 fw-bold mb-3">
-                        Save, Organize & Reuse Your Best AI Prompts
+                        Save, Organize & Reuse Your AI Prompts — With Fill-in Variables
                     </h1>
                     <p className="lead mb-4" style={{ maxWidth: 700, margin: '0 auto', opacity: 0.9 }}>
-                        PromptNest is a Chrome extension with a sidebar panel that works on ChatGPT, Gemini, and Claude. Save prompts with tags, organize with folders, and insert them into any chat with one click. Free for up to 10 prompts — upgrade to Pro for unlimited storage and more.
+                        PromptNest is a Chrome extension with a sidebar panel that works on ChatGPT, Gemini, and Claude. Build reusable prompt templates with {'{variables}'}, organize them with tags and folders, and insert them into any chat with one click. Free for up to 10 prompts — upgrade to Pro for unlimited storage and more.
                     </p>
                     <a
                         href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en"

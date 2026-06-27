@@ -6,7 +6,7 @@ function ComparisonTable() {
             <div className="text-center mb-4">
                 <h2 className="fw-bold">Compare Plans</h2>
                 <p className="text-muted">
-                    Start free and upgrade when you need unlimited prompts, nested folders, or CSV import/export.
+                    Start free and upgrade when you need unlimited prompts and CSV bulk import/export.
                 </p>
             </div>
 
@@ -38,8 +38,8 @@ function ComparisonTable() {
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
                                 <tr>
-                                    <td className="fw-semibold">Full Nested Folders</td>
-                                    <td><FaTimes className="text-muted" /></td>
+                                    <td className="fw-semibold">Templates with Fill-in Variables</td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
                                 <tr>

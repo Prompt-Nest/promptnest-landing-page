@@ -11,7 +11,7 @@ import Faq from './components/Faq';
 import Advantages from './components/Advantages';
 import Comparison from './components/Comparison';
 import PrivacyPolicy from './components/PrivacyPolicy';
-import YouTubePrompts from './components/YouTubePrompts';
+import Templates from './components/Templates';
 import OneClickInsert from './components/OneClickInsert';
 
 function App() {
@@ -19,11 +19,11 @@ function App() {
     <div className="container py-5">
       <Hero />
       <Features />
+      <Templates />
       <OneClickInsert />
       <HowItWorks />
       <UseCases />
       <Advantages />
-      <YouTubePrompts />
       <Comparison />
       <Faq />
       <PrivacyPolicy />
