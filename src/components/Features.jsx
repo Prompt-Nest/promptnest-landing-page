@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBoxOpen, FaTags, FaSyncAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaBoxOpen, FaTags, FaPuzzlePiece, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 function Features() {
     const slides = [
@@ -36,9 +36,9 @@ function Features() {
             desc: 'Organize prompts with tags and categories that make sense to you.',
         },
         {
-            icon: <FaSyncAlt size={24} style={{ color: '#7c3aed' }} />,
-            title: 'Reuse in Seconds',
-            desc: 'Open the sidebar on ChatGPT, Gemini, or Claude and insert your prompts with one click.',
+            icon: <FaPuzzlePiece size={24} style={{ color: '#7c3aed' }} />,
+            title: 'Fill-in Variables',
+            desc: 'Add {variables} to any prompt and fill them in on the fly — one template, endless reuse.',
         },
     ];
 

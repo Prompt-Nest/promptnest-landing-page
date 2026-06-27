@@ -1,11 +1,11 @@
-import { FaYoutube, FaBullhorn, FaGraduationCap, FaCode } from 'react-icons/fa';
+import { FaPenNib, FaBullhorn, FaGraduationCap, FaCode } from 'react-icons/fa';
 
 function UseCases() {
     const cases = [
         {
-            icon: <FaYoutube size={24} style={{ color: '#7c3aed' }} />,
+            icon: <FaPenNib size={24} style={{ color: '#7c3aed' }} />,
             title: 'Content Creators',
-            desc: 'Batch-produce YouTube titles, thumbnails hooks, or podcast show notes without repeating yourself.',
+            desc: 'Turn your best hooks, outlines, and titles into fill-in templates you can reuse across every piece.',
         },
         {
             icon: <FaBullhorn size={24} style={{ color: '#7c3aed' }} />,

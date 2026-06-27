@@ -14,8 +14,8 @@ function Advantages() {
         },
         {
             icon: <FaLaptopCode size={24} style={{ color: '#7c3aed' }} />,
-            title: 'Built for Power Users',
-            desc: 'Designed for creators, devs, marketers, and anyone using AI daily—not just hobbyists.',
+            title: 'Templates & Quick Capture',
+            desc: 'Build reusable {variable} templates, and right-click any text on the web to save it as a prompt.',
         },
         {
             icon: <FaLock size={24} style={{ color: '#7c3aed' }} />,
