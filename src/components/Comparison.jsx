@@ -6,7 +6,7 @@ function ComparisonTable() {
             <div className="text-center mb-4">
                 <h2 className="fw-bold">Compare Plans</h2>
                 <p className="text-muted">
-                    Start free and upgrade when you need unlimited prompts, Google Sheets sync, and bulk import/export.
+                    Start free and upgrade when you need unlimited prompts, full version history, Google Sheets sync, and bulk import. Pro starts with a 7-day free trial.
                 </p>
             </div>
 
@@ -25,17 +25,17 @@ function ComparisonTable() {
                                 <tr>
                                     <td className="fw-semibold">Price</td>
                                     <td>Free</td>
-                                    <td className="fw-semibold" style={{ color: '#7c3aed' }}>$2.99/month</td>
+                                    <td className="fw-semibold" style={{ color: '#7c3aed' }}>$4.99/month or $39/year</td>
                                 </tr>
                                 <tr>
                                     <td className="fw-semibold">Prompt Storage</td>
-                                    <td>Up to 10</td>
+                                    <td>Up to 25</td>
                                     <td><FaInfinity style={{ color: '#7c3aed' }} /> Unlimited</td>
                                 </tr>
                                 <tr>
-                                    <td className="fw-semibold">Tags & Basic Folders</td>
-                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
-                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                    <td className="fw-semibold">Tags & Folders</td>
+                                    <td>3 folders</td>
+                                    <td><FaInfinity style={{ color: '#7c3aed' }} /> Unlimited</td>
                                 </tr>
                                 <tr>
                                     <td className="fw-semibold">Templates with Fill-in Variables</td>
@@ -48,9 +48,14 @@ function ComparisonTable() {
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
                                 <tr>
-                                    <td className="fw-semibold">Version History & Prompt Chaining</td>
-                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
-                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                    <td className="fw-semibold">Prompt Chains</td>
+                                    <td>1 chain</td>
+                                    <td><FaInfinity style={{ color: '#7c3aed' }} /> Unlimited</td>
+                                </tr>
+                                <tr>
+                                    <td className="fw-semibold">Version History</td>
+                                    <td>3 most recent versions</td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /> Full history</td>
                                 </tr>
                                 <tr>
                                     <td className="fw-semibold">Keyboard Shortcuts & Quick Capture</td>
@@ -58,7 +63,12 @@ function ComparisonTable() {
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
                                 <tr>
-                                    <td className="fw-semibold">Bulk Import / Export (CSV &amp; JSON)</td>
+                                    <td className="fw-semibold">Export (CSV &amp; JSON)</td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                </tr>
+                                <tr>
+                                    <td className="fw-semibold">Bulk Import (CSV &amp; JSON)</td>
                                     <td><FaTimes className="text-muted" /></td>
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
