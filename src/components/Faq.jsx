@@ -3,16 +3,16 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const faqs = [
     {
-        question: 'What is PromptNest?',
-        answer: 'PromptNest is a Chrome extension that helps you save, organize, and reuse prompts on ChatGPT, Gemini, Claude, Copilot, and Perplexity. It opens as a sidebar panel right next to your chat so you can browse your saved prompts and insert them with one click.',
+        question: 'Is PromptNest free?',
+        answer: 'Yes — the free plan includes 25 prompts and every core feature: the sidebar on all supported AI sites, fill-in template variables, folders, tags, search, one-click insert, and CSV/JSON export. Pro ($4.99/month or $39/year, with a 7-day free trial) unlocks unlimited prompts, folders, and chains, full version history, bulk import, and Google Sheets sync.',
     },
     {
         question: 'Where are my prompts stored?',
-        answer: 'All your prompts are stored locally in your browser. We do not collect or store any of your data externally.',
+        answer: 'Locally in your browser. Nothing is sent to a server — PromptNest works without an account or email. Google Sheets sync is strictly opt-in (Pro), and even then the sheet lives in your own Google account.',
     },
     {
-        question: 'Is PromptNest free to use?',
-        answer: 'Yes — PromptNest offers a free tier that stores up to 10 prompts with folders, tags, fill-in template variables, version history, and prompt chaining. Pro ($2.99/month) unlocks unlimited storage, Google Sheets cloud sync, and CSV/JSON bulk import/export so you can back up and move your library across devices.',
+        question: 'What is PromptNest?',
+        answer: 'PromptNest is a Chrome extension that helps you save, organize, and reuse prompts on ChatGPT, Gemini, Claude, Copilot, and Perplexity. It opens as a sidebar panel right next to your chat so you can browse your saved prompts and insert them with one click.',
     },
     {
         question: 'Which AI platforms does PromptNest support?',
@@ -28,7 +28,7 @@ const faqs = [
     },
     {
         question: 'Can I chain prompts and track edit history?',
-        answer: 'Yes. Prompt chaining lets you link several prompts into an ordered sequence and run them step by step — ideal for repeatable, multi-stage workflows. Every prompt also keeps a version history: each edit is snapshotted so you can compare versions with an inline diff and revert to any earlier one with a single click. Both are included on the free tier.',
+        answer: 'Yes. Prompt chaining lets you link several prompts into an ordered sequence and run them step by step — ideal for repeatable, multi-stage workflows. Every prompt also keeps a version history: each edit is snapshotted so you can compare versions with an inline diff and revert with a single click. Free includes 1 chain and the 3 most recent versions per prompt; Pro unlocks unlimited chains and full history.',
     },
     {
         question: 'Do my prompts sync across devices?',
