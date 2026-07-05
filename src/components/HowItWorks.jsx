@@ -15,7 +15,7 @@ function HowItWorks() {
         {
             icon: <FaRocket size={24} style={{ color: '#7c3aed' }} />,
             title: '3. Use and Reuse',
-            desc: 'Open the sidebar on ChatGPT, Gemini, or Claude, find your saved prompt, and insert it into the active chat with one click — no copy-paste needed.',
+            desc: 'Open the sidebar on ChatGPT, Gemini, Claude, Copilot, or Perplexity, find your saved prompt, and insert it into the active chat with one click — no copy-paste needed.',
         },
     ];
 

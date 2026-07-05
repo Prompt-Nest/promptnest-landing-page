@@ -6,7 +6,7 @@ function ComparisonTable() {
             <div className="text-center mb-4">
                 <h2 className="fw-bold">Compare Plans</h2>
                 <p className="text-muted">
-                    Start free and upgrade when you need unlimited prompts and CSV bulk import/export.
+                    Start free and upgrade when you need unlimited prompts, Google Sheets sync, and bulk import/export.
                 </p>
             </div>
 
@@ -43,12 +43,27 @@ function ComparisonTable() {
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
                                 <tr>
-                                    <td className="fw-semibold">Sidebar Panel (ChatGPT, Gemini, Claude)</td>
+                                    <td className="fw-semibold">Sidebar (ChatGPT, Gemini, Claude, Copilot, Perplexity)</td>
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>
                                 <tr>
-                                    <td className="fw-semibold">Bulk Import / Export</td>
+                                    <td className="fw-semibold">Version History & Prompt Chaining</td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                </tr>
+                                <tr>
+                                    <td className="fw-semibold">Keyboard Shortcuts & Quick Capture</td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                </tr>
+                                <tr>
+                                    <td className="fw-semibold">Bulk Import / Export (CSV &amp; JSON)</td>
+                                    <td><FaTimes className="text-muted" /></td>
+                                    <td><FaCheck style={{ color: '#7c3aed' }} /></td>
+                                </tr>
+                                <tr>
+                                    <td className="fw-semibold">Google Sheets Cloud Sync</td>
                                     <td><FaTimes className="text-muted" /></td>
                                     <td><FaCheck style={{ color: '#7c3aed' }} /></td>
                                 </tr>

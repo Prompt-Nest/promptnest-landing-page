@@ -16,7 +16,7 @@ function OneClickInsert() {
                     <FaMousePointer size={48} className="mb-3" style={{ opacity: 0.9 }} />
                     <h2 className="fw-bold mb-3">One Click. Prompt Inserted.</h2>
                     <p className="lead mb-0" style={{ maxWidth: 600, margin: '0 auto', opacity: 0.9 }}>
-                        Click any saved prompt and it instantly appears in the ChatGPT, Gemini, or Claude input box. No copying, no pasting, no switching tabs.
+                        Click any saved prompt and it instantly appears in the ChatGPT, Gemini, Claude, Copilot, or Perplexity input box. No copying, no pasting, no switching tabs.
                     </p>
                 </div>
             </div>
@@ -38,7 +38,7 @@ function OneClickInsert() {
                             </div>
                             <h5 className="fw-semibold">Open the Sidebar</h5>
                             <p className="text-muted mb-0">
-                                While chatting on ChatGPT, Gemini, or Claude, open the PromptNest sidebar panel right alongside your conversation.
+                                While chatting on ChatGPT, Gemini, Claude, Copilot, or Perplexity, open the PromptNest sidebar panel right alongside your conversation.
                             </p>
                         </div>
                     </div>
