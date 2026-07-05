@@ -26,6 +26,9 @@ function PrivacyPolicy() {
                         We use Stripe to process payments. Stripe may collect payment-related information, but PromptNest does not store any credit card or billing details directly.
                     </p>
                     <p className="text-muted mb-3">
+                        Your prompts are stored locally in your browser. If you are a Pro user and choose to enable Google Sheets sync, PromptNest connects to your Google account to read and write a spreadsheet for backing up your prompts. We request only the limited <code>drive.file</code> scope, which restricts access to files the extension itself creates — PromptNest cannot see the rest of your Google Drive. This sync is optional and off until you turn it on.
+                    </p>
+                    <p className="text-muted mb-3">
                         We do not sell, rent, or share your personal information with third parties. Data is only used to provide the features of the extension.
                     </p>
                     <p className="text-muted mb-3">

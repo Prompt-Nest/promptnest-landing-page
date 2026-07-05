@@ -5,7 +5,7 @@ function Advantages() {
         {
             icon: <FaColumns size={24} style={{ color: '#7c3aed' }} />,
             title: 'Sidebar Access',
-            desc: 'Open PromptNest as a sidebar panel on ChatGPT, Gemini, and Claude. Browse and insert prompts without leaving your chat.',
+            desc: 'Open PromptNest as a sidebar panel on ChatGPT, Gemini, Claude, Copilot, and Perplexity. Browse and insert prompts without leaving your chat.',
         },
         {
             icon: <FaTags size={24} style={{ color: '#7c3aed' }} />,
@@ -14,13 +14,13 @@ function Advantages() {
         },
         {
             icon: <FaLaptopCode size={24} style={{ color: '#7c3aed' }} />,
-            title: 'Templates & Quick Capture',
-            desc: 'Build reusable {variable} templates, and right-click any text on the web to save it as a prompt.',
+            title: 'Power Features',
+            desc: 'Reusable {variable} templates, prompt chaining, version history, keyboard shortcuts, and right-click capture from any page.',
         },
         {
             icon: <FaLock size={24} style={{ color: '#7c3aed' }} />,
             title: 'Privacy First',
-            desc: 'Your prompts are stored locally in your browser. No tracking. No cloud sync. 100% yours.',
+            desc: 'Your prompts stay local in your browser by default. No tracking. Cloud sync is optional and opt-in. 100% yours.',
         },
     ];
 

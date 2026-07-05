@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBoxOpen, FaTags, FaPuzzlePiece, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaBoxOpen, FaTags, FaPuzzlePiece, FaHistory, FaLink, FaCloud, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 function Features() {
     const slides = [
@@ -16,7 +16,7 @@ function Features() {
         {
             img: '3.png',
             title: 'Access Anytime',
-            desc: 'Open the sidebar on ChatGPT, Gemini, or Claude and insert prompts with one click',
+            desc: 'Open the sidebar on ChatGPT, Gemini, Claude, Copilot, or Perplexity and insert prompts with one click',
         },
     ];
 
@@ -39,6 +39,21 @@ function Features() {
             icon: <FaPuzzlePiece size={24} style={{ color: '#7c3aed' }} />,
             title: 'Fill-in Variables',
             desc: 'Add {variables} to any prompt and fill them in on the fly — one template, endless reuse.',
+        },
+        {
+            icon: <FaHistory size={24} style={{ color: '#7c3aed' }} />,
+            title: 'Version History',
+            desc: 'Every edit is snapshotted. Compare versions with an inline diff and revert with one click.',
+        },
+        {
+            icon: <FaLink size={24} style={{ color: '#7c3aed' }} />,
+            title: 'Prompt Chaining',
+            desc: 'Link prompts into a sequence and run them step by step for repeatable, multi-stage workflows.',
+        },
+        {
+            icon: <FaCloud size={24} style={{ color: '#7c3aed' }} />,
+            title: 'Google Sheets Sync',
+            desc: 'Pro users back up and sync their library across devices with two-way Google Sheets sync.',
         },
     ];
 

@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 const faqs = [
     {
         question: 'What is PromptNest?',
-        answer: 'PromptNest is a Chrome extension that helps you save, organize, and reuse prompts on ChatGPT, Gemini, and Claude. It opens as a sidebar panel right next to your chat so you can browse your saved prompts and insert them with one click.',
+        answer: 'PromptNest is a Chrome extension that helps you save, organize, and reuse prompts on ChatGPT, Gemini, Claude, Copilot, and Perplexity. It opens as a sidebar panel right next to your chat so you can browse your saved prompts and insert them with one click.',
     },
     {
         question: 'Where are my prompts stored?',
@@ -12,11 +12,11 @@ const faqs = [
     },
     {
         question: 'Is PromptNest free to use?',
-        answer: 'Yes — PromptNest offers a free tier that stores up to 10 prompts with tags, folders, and fill-in template variables. Pro ($2.99/month) unlocks unlimited storage and CSV bulk import/export so you can back up and move your library between browsers.',
+        answer: 'Yes — PromptNest offers a free tier that stores up to 10 prompts with folders, tags, fill-in template variables, version history, and prompt chaining. Pro ($2.99/month) unlocks unlimited storage, Google Sheets cloud sync, and CSV/JSON bulk import/export so you can back up and move your library across devices.',
     },
     {
         question: 'Which AI platforms does PromptNest support?',
-        answer: 'PromptNest works as a sidebar panel on ChatGPT, Gemini, and Claude. You can also use the popup on any webpage to save and copy prompts.',
+        answer: 'PromptNest works as a sidebar panel on ChatGPT, Gemini, Claude, Copilot, and Perplexity. You can also use the popup on any webpage to save and copy prompts.',
     },
     {
         question: 'What are template variables?',
@@ -24,11 +24,15 @@ const faqs = [
     },
     {
         question: 'Can I save text I find around the web?',
-        answer: 'Yes. Highlight any text on a page, right-click, and choose "Save to PromptNest" to capture it as a new prompt without opening the popup.',
+        answer: 'Yes. Highlight any text on a page, right-click, and choose "Save to PromptNest" to capture it as a new prompt without opening the popup. You can also press Ctrl+S (Cmd+S on Mac) while typing in a supported AI chat box to capture what you have written, or Ctrl+Shift+P (Cmd+Shift+P) to open PromptNest and jump straight to search.',
+    },
+    {
+        question: 'Can I chain prompts and track edit history?',
+        answer: 'Yes. Prompt chaining lets you link several prompts into an ordered sequence and run them step by step — ideal for repeatable, multi-stage workflows. Every prompt also keeps a version history: each edit is snapshotted so you can compare versions with an inline diff and revert to any earlier one with a single click. Both are included on the free tier.',
     },
     {
         question: 'Do my prompts sync across devices?',
-        answer: 'Currently, prompts are stored locally in your browser and do not sync across devices. You can use CSV export/import (Pro feature) to manually transfer prompts between browsers.',
+        answer: 'Prompts are stored locally in your browser by default. Pro users can turn on two-way Google Sheets sync to back up their library and access it across devices — PromptNest connects to a sheet in your own Google account using a scope limited to the files it creates. You can also use CSV/JSON export and import to move prompts between browsers manually.',
     },
     {
         question: 'How do I uninstall PromptNest?',
