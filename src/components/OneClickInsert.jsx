@@ -1,4 +1,5 @@
 import { FaMousePointer, FaBolt, FaComments, FaArrowRight } from 'react-icons/fa';
+import { CWS_URL } from '../constants';
 
 function OneClickInsert() {
     return (
@@ -90,7 +91,7 @@ function OneClickInsert() {
             {/* CTA */}
             <div className="text-center mt-4">
                 <a
-                    href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en"
+                    href={CWS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-lg text-white fw-semibold"

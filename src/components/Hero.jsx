@@ -1,4 +1,5 @@
 import { FaChrome, FaArrowRight } from 'react-icons/fa';
+import { CWS_URL } from '../constants';
 
 function Hero() {
     return (
@@ -19,7 +20,7 @@ function Hero() {
                         PromptNest lives in a sidebar on ChatGPT, Gemini, Claude, Copilot, and Perplexity. Save your best prompts once, fill in the {'{variables}'}, and insert them instantly. Free to start. Private by default.
                     </p>
                     <a
-                        href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en"
+                        href={CWS_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-lg text-white fw-semibold"

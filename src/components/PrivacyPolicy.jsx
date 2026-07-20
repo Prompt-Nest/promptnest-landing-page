@@ -32,7 +32,7 @@ function PrivacyPolicy() {
                         We do not sell, rent, or share your personal information with third parties. Data is only used to provide the features of the extension.
                     </p>
                     <p className="text-muted mb-3">
-                        If you have any questions or wish to delete your account, contact: [your email]
+                        If you have any questions or wish to delete your account, contact: <a href="mailto:support@promptnest.app">support@promptnest.app</a>
                     </p>
                     <p className="text-muted mb-0">
                         This policy may be updated at any time. Continued use of the extension indicates acceptance of any changes.

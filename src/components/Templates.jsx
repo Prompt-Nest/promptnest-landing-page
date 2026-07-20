@@ -1,4 +1,5 @@
 import { FaPuzzlePiece, FaKeyboard, FaMagic, FaArrowRight } from 'react-icons/fa';
+import { CWS_URL } from '../constants';
 
 const example = {
     title: 'Blog Post Outline',
@@ -88,7 +89,7 @@ function Templates() {
 
             <div className="text-center mt-4">
                 <a
-                    href="https://chromewebstore.google.com/detail/promptnest/aenppnhnjnpbbkblfamhmophfnbhkdmp?authuser=0&hl=en"
+                    href={CWS_URL}
                     target="_blank"
                     rel="noreferrer"
                     className="btn btn-lg text-white fw-semibold"
