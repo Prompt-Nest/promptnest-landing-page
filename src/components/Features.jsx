@@ -5,19 +5,30 @@ function Features() {
     const slides = [
         {
             img: '1.png',
-            title: 'Save Prompts',
-            desc: 'Save any prompt with a title, body, and tags — your ideas, your way',
+            title: 'Your Prompts.',
+            desc: 'Your prompts, one click away - in every AI chat.',
         },
         {
             img: '2.png',
-            title: 'Tag & Categorize',
-            desc: 'Organize and filter your prompt collection in seconds',
+            title: 'Write it once.',
+            desc: 'Write it once. Reuse it with {variables}.',
         },
         {
             img: '3.png',
-            title: 'Access Anytime',
-            desc: 'Open the sidebar on ChatGPT, Gemini, Claude, Copilot, or Perplexity and insert prompts with one click',
+            title: 'Folders.',
+            desc: 'Folders, tags, search — find any prompt in seconds.',
         },
+        {
+            img: '4.png',
+            title: 'One Library.',
+            desc: 'One library. ChatGPT, Claude, Gemini, Copilot, Perplexity.',
+        },
+        {
+            img: '5.png',
+            title: 'Local First.',
+            desc: 'Local-first. No account. Your prompts never leave your browser.',
+        },
+        
     ];
 
     const [current, setCurrent] = useState(0);
